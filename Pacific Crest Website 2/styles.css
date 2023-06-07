@@ -78,10 +78,7 @@ a {
     color: black;
 }
 
-.nav-link:hover {
-    text-decoration: underline;
-    color:#093460;
-}
+
 
 /* SHOWCASE STYLES */
 
@@ -132,7 +129,7 @@ a {
 
 #services a:hover{
     color: black;
-    text-decoration: underline;
+    
 }
 
 #services h2 {
@@ -142,7 +139,7 @@ a {
 
 /* ABOUT US STYLES */
 
-@media only screen and (max-width: 973px) {
+@media only screen and (max-width: 990px) {
     #about-us img {
       display: none;
     }
@@ -165,6 +162,10 @@ a {
     position: relative;
     top: 0;
     bottom: 0;
+}
+
+#about-banner #header {
+    margin-top: 185px;
 }
 
 #about-us h2 {
@@ -234,7 +235,38 @@ a {
     box-shadow: 0 0 10px black;
 }
 
+/* Geotechnical Engineering Section */
+@media only screen and (max-width: 1200px) {
+    #geo-services img {
+        display:none;
+    }
+    } 
 
+    .list-group-item {
+        text-indent: -1.5em;
+        padding-left: 1.5em;
+    }
+
+
+    /* Materials Testing Section */
+
+    @media only screen and (max-width:768px) {
+        #materials-testing #pic-one {
+            max-width: 340px;
+        }
+    }
+    @media only screen and (max-width:991px) {
+        #materials-testing #pic-two {
+            display:none;
+        }
+    }
+
+    /* Special Inspections Section */
+    @media only screen and (max-width:992px) {
+        #special-inspections img {
+            display:none;
+        }
+    }
 
 /* FOOTER STYLE */
 
@@ -261,6 +293,11 @@ a {
 .kenburns-top-right {
 	-webkit-animation: kenburns-top-right 5s ease-out forwards;
 	        animation: kenburns-top-right 5s ease-out forwards;
+}
+
+.fade-in-top {
+	-webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 /* ----------------------------------------------
@@ -334,32 +371,66 @@ a {
     }
   }
   
-  @-webkit-keyframes kenburns-top-right {
+  @-webkit-keyframes fade-in-top {
     0% {
-      -webkit-transform: scale(1) translate(0, 0);
-              transform: scale(1) translate(0, 0);
-      -webkit-transform-origin: 84% 16%;
-              transform-origin: 84% 16%;
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
     }
     100% {
-      -webkit-transform: scale(1.25) translate(20px, -15px);
-              transform: scale(1.25) translate(20px, -15px);
-      -webkit-transform-origin: right top;
-              transform-origin: right top;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
     }
   }
-  @keyframes kenburns-top-right {
+  @keyframes fade-in-top {
     0% {
-      -webkit-transform: scale(1) translate(0, 0);
-              transform: scale(1) translate(0, 0);
-      -webkit-transform-origin: 84% 16%;
-              transform-origin: 84% 16%;
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
     }
     100% {
-      -webkit-transform: scale(1.25) translate(20px, -15px);
-              transform: scale(1.25) translate(20px, -15px);
-      -webkit-transform-origin: right top;
-              transform-origin: right top;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
     }
+  }
+  
+
+  /* Effects */
+  
+  .slide-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform .4s;
+  }
+  
+  .slide-in.slide-in--show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .underline-on-hover {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden; /* Ensure the overflow is hidden */
+  }
+  
+  .underline-on-hover::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #093460;
+    transition: width 0.5s, left 0.5s; /* Add transition for left property */
+  }
+  
+  .underline-on-hover:hover::before {
+    width: 100%;
+    left: 0;
   }
   
