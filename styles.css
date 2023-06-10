@@ -1,0 +1,495 @@
+
+/* GENERAL BODY STYLES */
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    max-width: 100vw;   /* Restrict width to viewport width */
+}
+
+b {
+    color: #093460;
+}
+
+hr {
+    width: 90%;
+    opacity: 100;
+    color: black;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+    color:black;
+}
+
+.blue {
+    color:#093460;
+}
+
+.btn {
+    background-color:#093460;
+    color: white;
+}
+
+.btn:hover {
+    color: #093460;
+    background-color: white;
+}
+
+.letter-space {
+    letter-spacing: .15rem;
+}
+
+.list-group-item::before {
+    content: "●";
+    margin-right: 0.75rem;
+  }
+
+/* Navbar Styles */
+
+#navbar {
+    color: #093460;
+}
+.spacer {
+    position: relative;
+    min-height: 100px;
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .spacer {
+        position: relative;
+        min-height: 50px;
+    }
+
+}
+
+.pc-logo {
+    width:375px;
+}
+
+@media only screen and (max-width: 500px) {
+    .pc-logo {
+      width: 200px;
+      /* height: 94px; */
+    }
+    }
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.nav-link {
+    color: black;
+}
+
+
+
+/* SHOWCASE STYLES */
+
+#main-heading {
+    letter-spacing: 0.01em;
+}
+
+#showcase {
+    background: url(./resources/cs-sky.jpeg) 50% 70% / cover no-repeat;
+
+    min-height: 640px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    #showcase {
+        background: url(./resources/cs-sky.jpeg) center center / cover no-repeat;
+        min-height: 500px;
+
+    }
+
+    #showcase h1 {
+        margin-top: 25px;
+    }
+}
+
+#showcase #header {
+    z-index: 2;
+
+}
+
+#overlay {
+    background: rgba(0, 0, 0, 0.3);
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+/* SERVICES STYLES */
+
+.services-img {
+    
+    height: 235px;
+    object-fit: cover;
+}
+
+#services a:hover{
+    color: black;
+    
+}
+
+#services h2 {
+    color: #093460;
+}
+
+
+/* ABOUT US STYLES */
+
+@media only screen and (max-width: 990px) {
+    #about-us img {
+      display: none;
+    }
+    }
+
+#about-us-main {
+    line-height: 1.75;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    
+}
+
+#about-us {
+    line-height: 1.75;
+}
+
+#about-banner {
+    background: url(./resources/big-sur.jpg) center / cover no-repeat;
+    min-height: 630px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+
+#about-banner #header {
+    margin-top: 185px;
+}
+
+#about-us h2 {
+    line-height: 1.75;
+    color: #093460;
+}
+
+#about-us .btn {
+    background-color:white;
+    border-color: #093460;
+    color: #093460
+}
+
+#about-us .btn:hover{
+    color: white;
+    background-color: #093460;
+}
+
+
+/* CONTACT US STYLES */
+
+#contact-us {
+    min-height: 325px;
+    background-color: #093460;
+}
+
+#contact-us a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 490px) {
+    #contact-us h5{
+      font-size: .9rem;
+    }
+    }
+
+
+/* Icon Styling */
+.fa-stack.small { font-size: 1.5em; }
+    i { vertical-align: middle; }
+
+
+
+/* MEET THE TEAM STYLES */
+
+.team-img {
+    
+    height: 300px;
+    width: 300px;
+    /* border-radius: 5px; */
+}
+
+#meet-the-team h5 {
+    letter-spacing: .15rem;
+}
+#meet-the-team h6 {
+    letter-spacing: .15rem;
+}
+
+
+/* Affiliations Styles */
+
+.aff-img {
+    height: 140px;
+    width: 260px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+
+/* Geotechnical Engineering Styles */
+    @media only screen and (max-width: 1200px) {
+    #geo-services img {
+        display:none;
+    }
+    } 
+
+    .list-group-item {
+        text-indent: -1.5em;
+        padding-left: 1.5em;
+    }
+
+
+/* Materials Testing Styling */
+
+    @media only screen and (max-width:768px) {
+        #materials-testing #pic-one {
+            max-width: 340px;
+        }
+    }
+    @media only screen and (max-width:991px) {
+        #materials-testing #pic-two {
+            display:none;
+        }
+    }
+
+    /* Special Inspections Styling */
+    @media only screen and (max-width:992px) {
+        #special-inspections img {
+            display:none;
+        }
+    }
+
+    /* Stormwater Management Styling */
+    @media only screen and (max-width:992px) {
+        #stormwater img {
+            display:none;
+        }
+    }
+
+    #stormwater img {
+        max-height: 500px;
+    }
+
+/* Environmental Consulting Styling */
+    @media only screen and (max-width:992px) {
+        #environmental img {
+            display:none;
+        }
+    }
+
+/* Chemical Engineering Styling */
+    @media only screen and (max-width: 1200px) {
+        #chemical img {
+            display:none;
+        }
+        } 
+
+        /* PROJECTS STYLES */
+
+        .project-image {
+            width: 100%;
+            height: 350px; /* Adjust this value as needed */
+            object-fit: cover;
+          }
+          
+
+        
+
+    
+
+/* FOOTER STYLE */
+
+#footer .container-fluid {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+
+
+/* AIMISTA ANIMATION STYLES */
+
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.puff-in-center {
+	-webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	        animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+
+.kenburns-top-right {
+	-webkit-animation: kenburns-top-right 5s ease-out forwards;
+	        animation: kenburns-top-right 5s ease-out forwards;
+}
+
+.fade-in-top {
+	-webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-5-22 13:41:1
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+ @-webkit-keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes puff-in-center {
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  
+  
+
+  /* Effects */
+  
+  .slide-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform .2s;
+  }
+  
+  .slide-in.slide-in--show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .underline-on-hover {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden; /* Ensure the overflow is hidden */
+  }
+  
+  .underline-on-hover::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color:#093460;
+    transition: width 0.5s, left 0.5s; /* Add transition for left property */
+  }
+  
+  .underline-on-hover:hover::before {
+    width: 100%;
+    left: 0;
+  }
+  
+  
