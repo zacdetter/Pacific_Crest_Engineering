@@ -8,9 +8,9 @@ body {
     max-width: 100vw;   /* Restrict width to viewport width */
 }
 
-b {
-    color: #093460;
-}
+.navbar-toggler-icon {
+    color: red; /* Change the color value to the desired color */
+  }
 
 hr {
     width: 90%;
@@ -48,6 +48,7 @@ a:hover{
 .list-group-item::before {
     content: "●";
     margin-right: 0.75rem;
+    font-size: 0.5em;
   }
 
 /* Navbar Styles */
@@ -127,7 +128,7 @@ a:hover{
 }
 
 #overlay {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.05);
     position:absolute;
     top:0;
     left:0;
@@ -222,8 +223,8 @@ a:hover{
 
 
 /* Icon Styling */
-.fa-stack.small { font-size: 1.5em; }
-    i { vertical-align: middle; }
+.fa-stack.small { font-size: 1.5em;}
+    i { vertical-align: middle;}
 
 
 
@@ -240,6 +241,9 @@ a:hover{
     letter-spacing: .15rem;
 }
 #meet-the-team h6 {
+    letter-spacing: .15rem;
+}
+#meet-the-team h4 {
     letter-spacing: .15rem;
 }
 
