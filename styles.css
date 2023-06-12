@@ -20,7 +20,7 @@ hr {
 
 a {
     color:black;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover{
@@ -50,6 +50,14 @@ a:hover{
     margin-right: 0.75rem;
     font-size: 0.5em;
   }
+
+  /* @media (max-width: 768px) {
+    .list-group-item::before {
+        content: "●";
+    margin-right: 0.75rem;
+    font-size: 0.2em;
+
+    } */
 
 /* Navbar Styles */
 
@@ -113,7 +121,7 @@ a:hover{
 @media (max-width: 768px) {
     #showcase {
         background: url(./resources/cs-sky.jpeg) center center / cover no-repeat;
-        min-height: 500px;
+        min-height: 620px;
 
     }
 
@@ -211,6 +219,11 @@ a:hover{
     background-color: #093460;
 }
 
+#contact {
+    min-height: 180px;
+    background-color: #093460;
+}
+
 #contact-us a:hover {
     text-decoration: underline;
 }
@@ -219,6 +232,11 @@ a:hover{
     #contact-us h5{
       font-size: .9rem;
     }
+    }
+
+    #contact a {
+        color:white;
+        text-decoration: none;
     }
 
 
@@ -488,12 +506,36 @@ a:hover{
     width: 0;
     height: 3px;
     background-color:#093460;
-    transition: width 0.5s, left 0.5s; /* Add transition for left property */
+    transition: width 0.3s, left 0.3s; /* Add transition for left property */
   }
   
-  .underline-on-hover:hover::before {
+   .underline-on-hover:hover::before {
     width: 100%;
     left: 0;
   }
+   
+
+  /* Underline on hover white text */
+  .underline-on-hover-white {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden; /* Ensure the overflow is hidden */
+  }
   
+  .underline-on-hover-white::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.3s, left 0.3s; /* Add transition for left property */
+  }
   
+   .underline-on-hover-white:hover::before {
+    width: 100%;
+    left: 0;
+  }
