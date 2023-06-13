@@ -64,6 +64,17 @@ a:hover{
 #navbar {
     color: #093460;
 }
+
+.navbar-toggler {
+    border-color: transparent;
+    color: #093460;
+}
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(9, 52, 96, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%282, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
+}
+
 .spacer {
     position: relative;
     min-height: 100px;
@@ -490,6 +501,8 @@ a:hover{
     transform: translateY(0);
   }
 
+  /* Underline on hover - only on medium screen and above */
+  @media (min-width: 420px) {
   .underline-on-hover {
     position: relative;
     display: inline-block;
@@ -513,9 +526,10 @@ a:hover{
     width: 100%;
     left: 0;
   }
-   
+}
 
   /* Underline on hover white text */
+  @media (min-width: 420px) {
   .underline-on-hover-white {
     position: relative;
     display: inline-block;
@@ -539,3 +553,4 @@ a:hover{
     width: 100%;
     left: 0;
   }
+}
