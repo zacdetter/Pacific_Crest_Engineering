@@ -74,8 +74,12 @@ a:hover{
 .navbar-toggler-icon{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(9, 52, 96, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 
-    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%282, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
+     
 }
+
+
+  
+  
 
 .spacer {
     position: relative;
@@ -123,7 +127,7 @@ a:hover{
 }
 
 #showcase {
-    background: url(./resources/cs-bummer.jpg) 50% 30% / cover no-repeat;
+    background: url(./resources/cs-awesome.jpg) 50% 30% / cover no-repeat;
     min-height: 640px;
     position: relative;
     top: 0;
@@ -140,7 +144,7 @@ a:hover{
 
 @media (max-width: 768px) {
     #showcase {
-        background: url(./resources/cs-bummer.jpg) 50% 0% / cover no-repeat;
+        background: url(./resources/cs-awesome.jpg) 50% 100% / cover no-repeat;
         min-height: 620px;
 
     }
