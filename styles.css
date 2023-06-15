@@ -8,9 +8,7 @@ body {
     max-width: 100vw;   /* Restrict width to viewport width */
 }
 
-.navbar-toggler-icon {
-    color: red; /* Change the color value to the desired color */
-  }
+
 
 hr {
     width: 90%;
@@ -43,6 +41,10 @@ a:hover{
 
 .letter-space {
     letter-spacing: .15rem;
+}
+
+.line-height {
+    line-height: 2;
 }
 
 .list-group-item::before {
@@ -121,17 +123,24 @@ a:hover{
 }
 
 #showcase {
+    background: url(./resources/cs-bummer.jpg) 50% 30% / cover no-repeat;
+    min-height: 640px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+/* #showcase {
     background: url(./resources/cs-sky.jpeg) 50% 70% / cover no-repeat;
 
     min-height: 640px;
     position: relative;
     top: 0;
     bottom: 0;
-}
+} */
 
 @media (max-width: 768px) {
     #showcase {
-        background: url(./resources/cs-sky.jpeg) center center / cover no-repeat;
+        background: url(./resources/cs-bummer.jpg) 50% 0% / cover no-repeat;
         min-height: 620px;
 
     }
@@ -353,7 +362,24 @@ a:hover{
           }
           
 
+          .carousel-image {
+            width: 100%;
+            height: 450px;
+          
+            object-fit: cover;
+        }
         
+        .carousel-caption {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            background-color: rgba(9, 52, 96, 0.8);
+            padding: 10px;
+            color: #fff;
+            width: 100%;
+        }
 
     
 
