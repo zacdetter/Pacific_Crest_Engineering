@@ -11,23 +11,33 @@ body {
 
 
 hr {
-    width: 95%;
+    width: 85%;
     opacity: 100;
     color: black;
 }
 
 #first-hr {
-    width: 100%;
+    width: 90%;
     opacity: 100;
     color: black;
 }
 
-a {
-    color:black;
-    text-decoration: underline;
+#small-hr {
+    width: 75%;
+    opacity: 100;
+    color: black;
 }
 
+@media only screen and (max-width: 500px) {
+#services a {
+    color:black;
+   
+    border-bottom: 2px solid #000;
+    margin-bottom: 5px;
+    display: inline-block;
+}
 
+}
 
 a:hover{
     color:black;
@@ -41,16 +51,7 @@ a:hover{
    color: #354e21;
 }
 
-/* .btn {
-    background-color:white;
-    border-color: #093460;
-    color: #093460;
-}
 
-.btn:hover{
-    color: white;
-    background-color: #354e21;
-} */
 
 #special-button {
     background-color:#374e26;
@@ -127,8 +128,10 @@ footer {
 @media only screen and (max-width: 500px) {
     
     .spacer {
+        
         position: relative;
-        min-height: 50px;
+        /* min-height: 100px; */
+        min-height: 80px;
     }
 
 }
@@ -142,8 +145,8 @@ footer {
       width: 275px;
       
     }
-    /* #navbar {
-        height: 
+    /* #navbar .container-fluid {
+        min-height: 100px;
     } */
 
     }
@@ -169,21 +172,18 @@ footer {
 }
 
 #showcase {
-    background: url(./resources/top-view.jpg) 50% 30% / cover no-repeat;
+    background: url(./resources/top-view.jpg) 50% 50% / cover no-repeat;
     min-height: 640px;
     position: relative;
     top: 0;
     bottom: 0;
     
 }
-/* #showcase {
-    background: url(./resources/cs-sky.jpeg) 50% 70% / cover no-repeat;
 
-    min-height: 640px;
-    position: relative;
-    top: 0;
-    bottom: 0;
-} */
+#showcase h1 {
+    margin-top: 65px;
+}
+
 
 @media (max-width: 768px) {
     #showcase {
@@ -203,7 +203,7 @@ footer {
 }
 
 #overlay {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.1);
     position:absolute;
     top:0;
     left:0;
@@ -215,10 +215,24 @@ footer {
 
 /* SERVICES STYLES */
 
+/* @media only screen and (max-width: 500px) {
+    #services {
+        color:black;
+       
+        border-bottom: 2px solid #000;
+        margin-bottom: 5px;
+        display: inline-block;
+    } */
+
 .services-img {
     
     height: 235px;
     object-fit: cover;
+}
+
+#services a{
+    color: black;
+    text-decoration: none;
 }
 
 #services a:hover{
@@ -281,6 +295,7 @@ footer {
 
 /* CONTACT US STYLES */
 
+
 #contact-us {
     min-height: 325px;
     background-color: #093460;
@@ -299,6 +314,15 @@ footer {
     #contact-us h5{
       font-size: .9rem;
     }
+    
+    #contact h2 a{
+        color:white;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid white;
+    margin-bottom: 5px;
+    display: inline-block;
+    }
+
     }
 
     #contact a {
@@ -354,6 +378,10 @@ footer {
         padding-left: 1.5em;
     }
 
+    #geo-services img{
+        
+        max-height: 425px;
+    }
 
 /* Materials Testing Styling */
 
@@ -399,6 +427,10 @@ footer {
             display:none;
         }
         } 
+
+        #chemical img {
+            max-height: 525px;
+        }
 
         /* PROJECTS STYLES */
 
@@ -600,8 +632,9 @@ footer {
     left: 0;
     width: 0;
     height: 3px;
-    background-color:#093460;
-    transition: width 0.3s, left 0.3s; /* Add transition for left property */
+    background-color:black;
+    transition: width 0.3s, left 0.3s; 
+    
   }
   
    .underline-on-hover:hover::before {
