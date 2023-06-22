@@ -203,7 +203,7 @@ footer {
 }
 
 #overlay {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.09);
     position:absolute;
     top:0;
     left:0;
@@ -368,10 +368,18 @@ footer {
 
 /* Geotechnical Engineering Styles */
     @media only screen and (max-width: 1200px) {
-    #geo-services img {
+    #geo-services #geosmall {
         display:none;
     }
     } 
+    
+    @media only screen and (min-width: 1200px) {
+    #geo-services #onlysmall {
+        display:none;
+    }
+    } 
+
+    
 
     .list-group-item {
         text-indent: -1.5em;
@@ -398,14 +406,26 @@ footer {
 
     /* Special Inspections Styling */
     @media only screen and (max-width:992px) {
-        #special-inspections img {
+        #special-inspections #small {
+            display:none;
+        }
+    }
+    
+    @media only screen and (min-width:992px) {
+        #special-inspections #onlysmall {
             display:none;
         }
     }
 
     /* Stormwater Management Styling */
     @media only screen and (max-width:992px) {
-        #stormwater img {
+        #stormwater #small {
+            display:none;
+        }
+    }
+
+    @media only screen and (min-width:992px) {
+        #stormwater #onlysmall {
             display:none;
         }
     }
@@ -416,23 +436,41 @@ footer {
 
 /* Environmental Consulting Styling */
     @media only screen and (max-width:992px) {
-        #environmental img {
+        #environmental #small {
+            display:none;
+        }
+    }
+    @media only screen and (min-width:992px) {
+        #environmental #onlysmall {
             display:none;
         }
     }
 
 /* Chemical Engineering Styling */
     @media only screen and (max-width: 1200px) {
-        #chemical img {
+        #chemical #small {
             display:none;
         }
         } 
+
+        @media only screen and (min-width:1200px) {
+            #chemical #onlysmall {
+                display:none;
+            }
+        }
 
         #chemical img {
             max-height: 525px;
         }
 
         /* PROJECTS STYLES */
+
+        @media only screen and (max-width: 475px) {
+            #projects img {
+                max-height:325px;
+            }
+            } 
+
 
         .project-image {
             width: 100%;
