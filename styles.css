@@ -645,7 +645,7 @@ footer {
   .slide-in {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.5s, transform .2s;
+    transition: opacity 0.5s, transform .5s;
   }
   
   .slide-in.slide-in--show {
