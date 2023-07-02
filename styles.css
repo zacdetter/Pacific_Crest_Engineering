@@ -314,6 +314,8 @@ footer {
     #contact-us h5{
       font-size: .9rem;
     }
+
+    
     
     #contact h2 a{
         color:white;
@@ -707,3 +709,30 @@ footer {
     left: 0;
   }
 }
+
+/* Underline on hover white address text */
+@media (min-width: 420px) {
+    .underline-on-hover-white-address {
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      overflow: hidden; /* Ensure the overflow is hidden */
+    }
+    
+    .underline-on-hover-white-address::before {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background-color: clear;
+      transition: width 0.3s, left 0.3s; /* Add transition for left property */
+    }
+    
+     .underline-on-hover-white-address:hover::before {
+      width: 100%;
+      left: 0;
+    }
+  }
